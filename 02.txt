@@ -9,8 +9,7 @@
 
 <HR>
 
-<a href="rtucker72.github.io/01.txt
-">Link Name</a>
+<a href="http://rtucker72.github.io/01.txt">Link Name</a>
 
 is a link to another document
 
