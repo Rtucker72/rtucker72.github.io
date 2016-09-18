@@ -12,4 +12,18 @@ article, aside, footer, header, main, nav, section {
 .banner {
   background-color: #11233b;
   color: white;
+  padding: 10px 20px;
+}
+
+body{
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f0f0f0;
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 15px;
+}
+
+nav{
+  background-color: #20416c;
 }
