@@ -45,9 +45,37 @@ li {
 section{
   background-color: #bbbbbb;
   margin-top: 10px;
+  padding: 5px;
 }
 
 article {
   background-color: white;
+  margin-top: 5px;
+  padding: 10px 15px;
 }
+
+main {
+  width: 640px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+aside {
+  background-color: #bbbbbb;
+  width: 270px;
+  float: right;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+footer {
+  clear: both;
+  background-color: #20416e;
+  color: white;
+  padding: 5px 20px;
+}
+
+
+
+
 
