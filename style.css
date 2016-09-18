@@ -41,3 +41,13 @@ li {
   font-variant: small-caps;
   font-weight: bold;
 }
+
+section{
+  background-color: #bbbbbb;
+  margin-top: 10px;
+}
+
+article {
+  background-color: white;
+}
+
