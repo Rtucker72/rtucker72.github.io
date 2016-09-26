@@ -10,8 +10,8 @@ a:active {
   color: #ff8000 
 }
 
-li {
-    position: absolute;
+ul {
+    position: fixed;
     left: 100px;
     bottom: 150px;
 }
