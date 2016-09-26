@@ -11,15 +11,9 @@ a:active {
 }
 
 ul {
-    padding-bottom: 100px;
-    left: 100px;
-    bottom: 150px;
-}
-
-li {
-    padding-bottom: 100px;
-    left: 100px;
-    bottom: 150px;
+    list-style-type: disc;
+    list-style-position: outside;
+    list-style-image: none;
 }
   
  
