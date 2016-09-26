@@ -13,8 +13,6 @@ a:active {
 ul {
     position: absolute;
     list-style-type: disc;
-    list-style-position: outside;
-    list-style-image: none;
 }
   
  
