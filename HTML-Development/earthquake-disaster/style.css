@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 a:link {
-  color: #555
+  color: #0000ff
 }
 a:visited {
-  color: #555
+  color: #000000
 }
 a:active {
-  color: #000
+  color: #ff8000 
 }
 
 ul.links li {
