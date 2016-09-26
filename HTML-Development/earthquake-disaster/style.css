@@ -11,7 +11,7 @@ a:active {
 }
 
 ul {
-    position:static;
+    padding-bottom: 100px;
     left: 100px;
     bottom: 150px;
 }
