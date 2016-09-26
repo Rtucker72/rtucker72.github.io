@@ -1,1 +1,17 @@
+@charset "UTF-8";
 
+a:link {
+  color: #555
+}
+a:visited {
+  color: #555
+}
+a:active {
+  color: #000
+}
+
+ul.links li {
+  border-left: 1px solid #888;
+}
+  
+ 
