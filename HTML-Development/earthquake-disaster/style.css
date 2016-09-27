@@ -22,7 +22,7 @@ ul {
 }
 
 table {
-    position: absolute;
+    position: float;
     border-collapse: collapse;
     top: 200px;
 }
