@@ -23,6 +23,7 @@ ul {
 
 table {
     border-collapse: collapse;
+    top: 200px;
 }
 
 table,th,td{
