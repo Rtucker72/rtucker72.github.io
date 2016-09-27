@@ -32,5 +32,9 @@ table,th,td{
 th,td{
   padding: 2px;
 }
+
+th {
+text-align: left;
+}
   
  
