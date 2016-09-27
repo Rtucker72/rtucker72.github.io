@@ -15,8 +15,8 @@ a:active {
 }
 
 ul {
-    position: absolute;
-    top: 300px;
+    position: relative;
+    
     left: 50px;
     list-style-type: disc;
     padding-bottom: 100px;
