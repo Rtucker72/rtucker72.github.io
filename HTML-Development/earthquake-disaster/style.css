@@ -16,10 +16,9 @@ a:active {
 
 ul {
     position: float;
-    
     left: 50px;
     list-style-type: disc;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
   
  
