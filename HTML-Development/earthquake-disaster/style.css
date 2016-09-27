@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
-h1 { color: blue;
+body {
+    background-color: cfdee2;
+}
+
+h1 { color: 0000ff;
 }
 
 a:link {
