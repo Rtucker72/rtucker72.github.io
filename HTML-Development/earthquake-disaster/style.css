@@ -24,6 +24,8 @@ ul {
 .a {
   width:790px;
   text-align:justify;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 table {
