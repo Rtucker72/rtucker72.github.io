@@ -21,8 +21,9 @@ ul {
     padding-bottom: 50px;
 }
 
-div {
-    text-align:justify;
+.a {
+  width:700px;
+  text-align:justify;
 }
 
 table {
