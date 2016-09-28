@@ -21,6 +21,10 @@ ul {
     padding-bottom: 50px;
 }
 
+div {
+text-align: justify;
+}
+
 table {
     border-collapse: collapse;    
 }
