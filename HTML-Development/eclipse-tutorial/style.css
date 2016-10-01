@@ -2,6 +2,8 @@
 
 
 h1 { color: red;
+   font-family: verdana;
+   font-size: 300%;
 }
 
 a:link {
