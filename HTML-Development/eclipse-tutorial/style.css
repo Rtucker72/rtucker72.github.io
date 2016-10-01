@@ -1,1 +1,49 @@
+@charset "UTF-8";
 
+
+h1 { color: blue;
+}
+
+a:link {
+  color: #0000ff
+}
+a:visited {
+  color: #808080
+}
+a:active {
+  color: #ff8000 
+}
+
+ul {
+    position: float;
+    left: 50px;
+    list-style-type: disc;
+    padding-bottom: 50px;
+}
+
+.a {
+  width:790px;
+  text-align:justify;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+table {
+    border-collapse: collapse;    
+}
+
+table,th,td{
+  border:1px solid black;
+}
+
+th,td{
+  padding: 2px;
+}
+
+td {
+text-align: center;
+}
+
+img  {
+    float: center;
+} 
