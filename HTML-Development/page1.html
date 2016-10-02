@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css" media="all">@import"homework-css.css"</style>
+<meta charset="ISO-8859-1">
+<title>AI Planning Techniques</title>
+</head>
+<body>
+<h1 align="center">Post-Earthquake Rescue Operation</h1>
+<h2 align="center">Artificial Intelligence Planning Techniques</h2>
+<IMG STYLE="position:absolute; TOP:20px; RIGHT:100px; WIDTH:100px; HEIGHT:100px" SRC="pictures/SCCC-seal.gif">
+  
+  <br><br><br>
+  
+  <div class="a"><b>
+  Rezza Basseda, Michael Kifer, "State Space Planning Using Transaction Logic", Practical Aspects of 
+    Declarative Languages, Volume 9131 of the series Lecture Notes in Computer Science, pp 17-33, Date: 14 May 2015
+    </b></div><br>
+  
+  <div class="a">
+    <b>Abstract:</b><br>
+    State space planning algorithms have been considered as one of the main classical planning techniques to solve 
+    classical planning problems since 1960. In this paper, we show that Transaction Logic is an appropriate language 
+    and framework to study and compare these planning algorithms, which enables one to have more efficient planners 
+    in logic programming frameworks. Specifically, we take \(\textit{STRIPS}\) planning and forward state space 
+    planning algorithms, and show that the specification of these algorithms in Transaction Logic lets one implement 
+    complicated planning algorithms in declarative programming languages (e.g. Prolog). We first provide a formal 
+    representation of these planning algorithms in Transaction Logic, which can be used to automatically translate 
+    \( \textit{STRIPS}\) planning problems in PDDL to Transaction Logic rules. Then, we use the resulting Transaction 
+    Logic rules to solve planning problems and compare the performance of those algorithms in our simple interpreter 
+    implemented in XSB Prolog. We use several case studies to show how the linear \( \textit{STRIPS}\) planning 
+    algorithm is faster than forward state space search. Our experiments highlight the fact that a planner implemented 
+    by logic programming framework can become faster if an appropriate planning algorithm is applied.
+  </div>
+  
+  <br>
+  <hr width="60%">
+  <br>
+  
+  <div class="a"><b>
+  Rezza Basseda, Michael Kifer, "Planning with Regression Analysis in Transaction Logic", Web Reasoning and Rule 
+    Systems, Volume 9209 of the series Lecture Notes in Computer Science, pp 45-60, Date: 22 July 2015
+    </b></div><br>
+  
+  <div class="a">
+    <b>Abstract:</b><br>
+    Heuristic search is arguably the most successful paradigm in Automated Planning, which greatly improves the 
+    performance of planning strategies. However, adding heuristics usually leads to very complicated planning 
+    algorithms. In order to study different properties (e.g. completeness) of those complicated planning algorithms, 
+    it is important to use an appropriate formal language and framework. In this paper, we argue that Transaction 
+    Logic is just such a specification language, which lets one formally specify both the heuristics, the planning 
+    algorithm, and also facilitates the discovery of more general and more efficient algorithms. To illustrate, we 
+    take the well-known regression analysis mechanism and show that Transaction Logic lets one specify the concept 
+    of regression analysis easily and thus express \(\textit{RSTRIPS}\), a classical and very complicated planning 
+    algorithm based on regression analysis. Moreover, we show that extensions to that algorithm that allow indirect 
+    effects and action ramification are obtained almost for free. Finally, a compact and clear logical formulation 
+    of the algorithm lets us prove the completeness of \(\textit{RSTRIPS}\)—a result that, to the best of our knowledge, 
+    has not been known before.
+  </div>
+  
+  <br>
+  <hr width="60%">
+  <br>
+  
+  <div class="a"><b>
+  Rezza Basseda, Michael Kifer, Anthony J. Bonner, "Planning with Transaction Logic", Web Reasoning and Rule Systems, 
+    Volume 8741 of the series Lecture Notes in Computer Science, pp 29-44, Date: Unknown
+    </b></div><br>
+  
+  <div class="a">
+    <b>Abstract:</b><br>
+Automated planning has been the subject of intensive research and is at the core of several areas of AI, including 
+    intelligent agents and robotics. In this paper, we argue that Transaction Logic is a natural specification 
+    language for planning algorithms, which enables one to see further afield and thus discover better and more 
+    general solutions than using one-of-a-kind formalisms. Specifically, we take the well-known \({\textit{STRIPS}}\) 
+    planning strategy and show that Transaction Logic lets one specify the \({\textit{STRIPS}}\) planning algorithm 
+    easily and concisely, and to prove its completeness. Moreover, extensions to allow indirect effects and to 
+    support action ramifications come almost for free. Finally, the compact and clear logical formulation of the 
+    algorithm made possible by this logic is conducive to fruitful experimentation. To illustrate this, we show 
+    that a rather simple modification of the \({\textit{STRIPS}}\) planning strategy is also complete and yields 
+    speedups of orders of magnitude.
+  </div>
+  
+  <br>
+  <hr width="60%">
+  <br>
+  
+  <div class="a"><b>
+  Roman Bartak, Daniel Toropila, "Solving Sequential Planning Problems via Constraint Satisfaction", Methodologies 
+    for Intelligent Systems, Fundamenta Informaticae, vol. 99, no. 2, pp. 125-145, 2010, Date: 2010
+    </b></div><br>
+  
+  <div class="a">
+    <b>Abstract:</b><br>
+Planning problems deal with finding a sequence of actions that transfer the initial state of the world into a desired 
+    state. Frequently such problems are solved by dedicated algorithms but there exist planners based on translating 
+    the planning problem into a different formalism such as constraint satisfaction or Boolean satisfiability and 
+    using a general solver for this formalism. The paper describes how to enhance existing constraintmodels of 
+    sequential planning problems by using techniques such as symmetry breaking (dominance rules), singleton consistency, 
+    nogoods, lifting, or techniques motivated by the partial-order planning.
+  </div>
+  
+  <br>
+  <hr width="60%">
+  <br>
+  
+  <div class="a"><b>
+Wolfgang Bibel, "A Deductive Solution for Plan Generation", Foundations of Knowledge Base Management, Part of the 
+    series: Topics in Information Systems, pp 453-473, Date: Unknown
+    </b></div><br>
+  
+  <div class="a">
+    <b>Abstract:</b><br>
+A new deductive method for solving robot problems is presented in this paper. The descriptions of initial and goal 
+    situations are given by logical formulas. The primitive actions are described by rules, i.e. logical formulas as 
+    well. Altogether this results in a problem description as in logic programming or in program synthesis. A solution 
+    is generated by a proof of this description as in program synthesis, except that here proofs have to be 
+    strictly linear. This restriction is the clue to our solution; it can be easily added as an option to any 
+    theorem prover such as one based on the connection method used hereafter. In fact this restriction speeds up the 
+    proof search considerably. At the same time our approach offers an elegant solution of the frame problem.
+  </div>
+  
+  
+  
+  
+<ul>   
+   <li> <a href="index.html">Home</a></li>
+   <li> <a href="casualty-examples.html">Casualty Examples</a></li>
+   <li> <a href="casualty-statistics.html">Casualty Statistics</a></li> 
+   <li> <a href="required-resources-for-rescue.html">Required Resources for Rescue Operation</a></li>
+</ul>
+</body>
+</html>
