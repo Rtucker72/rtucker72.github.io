@@ -1,57 +1,53 @@
 @charset "UTF-8";
 
-
-h1 { color: blue;
-  font-family: verdana;
-  font-size: 200%;
+body { background-color: lightblue;
+  text-align: center;  
+}
+body.uppercase { text-transform: uppercase;
 }
 
-a:link {
-  color: #0000ff
-}
-a:visited {
-  color: #808080
-}
-a:active {
-  color: #ff8000 
+p { background-color: yellow;
+  font-weight: bold;
+  text-align: center;
 }
 
-ul {
-    position: float;
-    left: 50px;
-    list-style-type: disc;
-    padding-bottom: 50px;
+p > h1 { background-color: yellow;
+  font-weight: bold;
+  text-align: left;
+}
+  
+p > h4 { background-color: yellow;
+  font-weight: bold;
+  text-align: left;
 }
 
-.a {
-  width:790px;
-  text-align:justify;
-  margin-left:auto;
-  margin-right:auto;
+h1 > div { background-color: yellow;
+  text-align: left;
 }
 
-table {
-    border-collapse: collapse;    
+h1 > p { background-color: pink;
+  text-align: center;
 }
 
-table,th,td{
-  border:1px solid black;
+h4 > p {
 }
 
-th,td{
-  padding: 2px;
+h4 > p {
 }
 
-td {
-text-align: center;
+img { background-color: yellow;
+  text-align: center;
 }
 
-td img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+img > h1 { background-color: yellow;
+  text-align: left;
 }
 
-img  {
-    float: center;
-} 
+img > h2 { background-color: orange;
+  text-align: center;
+}
+
+h1 > h3 { background-color: yellow;
+  text-align: right;
+}
+
