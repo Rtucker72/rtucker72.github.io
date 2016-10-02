@@ -29,10 +29,10 @@ h1 > p { background-color: pink;
   text-align: center;
 }
 
-h4 > p {
+h4 > p [text-align: center] { background-color: blue;
 }
 
-h4 > p {
+h4 > p [text-align: left]{ background-color: yellow;
 }
 
 img { background-color: yellow;
