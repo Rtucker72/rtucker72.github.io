@@ -11,7 +11,6 @@ lastName = document.simpleForm.lastName.value;
 </script>
   
 <script type="text/javascript">
-
 confirm(displayText);
 </script>
 
@@ -25,10 +24,10 @@ confirm(displayText);
 
 <p>Enter names in the fields, then click "Submit" to submit the form:</p>
 
-<form id="frm1" action="form_action.asp">
+<form name=simpleform>
   First name: <input type="text" name="firstName"><br>
   Last name: <input type="text" name="lastName"><br><br>
-  <input type="button" onclick="myFunction()" value="Submit">
+  <input type="button" onclick="displayText()" value="Submit">
 </form>
 
 <script>
