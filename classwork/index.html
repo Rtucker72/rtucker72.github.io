@@ -10,6 +10,24 @@ firstName = document.simpleForm.firstName.value;
 lastName = document.simpleForm.lastName.value;
 </script>
   
+  
+ 
+
+
+
+
+<script>
+function myFunction() {
+    confirm("Press a button!");
+}
+</script> 
+  
+  
+  
+  
+  
+  
+  
 <script>
 function confirmFunction() {
     confirm("Is your name" + firstName + lastName "?");
@@ -27,7 +45,7 @@ var firstName, lastName;
 <form name=simpleForm>
   First name: <input type="text" name="firstName"><br>
   Last name: <input type="text" name="lastName"><br><br>
-  <input type="button" onclick="displayText()" value="Submit">
+  <input type="button" onclick="myFunction()" value="Submit">
 </form>
 
 </body>
