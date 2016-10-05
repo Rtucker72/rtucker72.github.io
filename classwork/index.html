@@ -3,19 +3,20 @@
 <head>
 
 <script type="text/javascript">function displayText(){
-document.simpleForm.response.value="You click the red button!"
+document.simpleForm.response.value="Are you sure your name is" + firstName + "" + lastName";
 }
+  
+<script type="text/javascript">
+
+confirm(displayText);
+</script>
 
 firstName = document.simpleForm.firstName.value;
 lastName = document.simpleForm.lastName.value;
 
-
 </script>
 
-
-
 </head>
-
 
 <body>
 
