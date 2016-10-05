@@ -16,9 +16,13 @@ lastName = document.simpleForm.lastName.value;
 confirm(displayText);
 </script>
 
-
-
+<script>
+function myFunction() {
+    document.getElementById("simpleForm").submit();
+}
 </script>
+
+
 
 </head>
 
@@ -32,11 +36,7 @@ confirm(displayText);
   <input type="button" onclick="displayText()" value="Submit">
 </form>
 
-<script>
-function myFunction() {
-    document.getElementById("simpleForm").submit();
-}
-</script>
+
 
 </body>
 </html>
