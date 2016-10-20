@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+ 
+<script type="text/javascript">
+ input1.onclick = function() {
+    textArea1.focus();
+}
+textArea1.onfocus = function() {
+    input1.checked = true;
+}
+</script>
 
 </head>
 
@@ -10,7 +19,7 @@
 
 <table align="center" border=3>
 <tr>
-<td colspan=4><input type="radio" name="input1" value="Input 1" onclick="radioOne()"><input type="text" name="Input1" maxlength="8"></td>
+<td colspan=4><input type="radio" name="input1" value="Input 1"><input type="text" name="textArea1" maxlength="8"></td>
 </tr>
 <tr>
 <td colspan=4><input type="radio" name="input2" value="Input 2" onclick="radioTwo()"><input type="text" name="Input2" maxlength="8"></td>
