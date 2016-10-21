@@ -2,12 +2,27 @@
 <html>
 <head>
  
+ window.onload = function() {
+
+    var myRadioButton = document.form1.getElementsByTagName("INPUT")[1];
+    var myTextArea = document.form1.getElementsByTagName("INPUT")[2];
+
+    myRadioButton.onclick = function() {
+        alert("Click");
+        myTextArea.focus();
+    }
+    myTextArea.onfocus = function() {
+        myRadioButton.checked = true;
+    }
+}
+ 
+ 
 <script type="text/javascript">
- input1.onclick = function() {
+ nput.onclick = function() {
     textArea1.focus();
 }
 textArea1.onclick = function() {
-    input1.checked = true;
+    Input.checked = true;
 }
 </script>
 
@@ -25,7 +40,7 @@ textArea1.onclick = function() {
 <td colspan=4><input type="radio" name="input" value="textArea2" onclick="textArea2"><input type="text" name="textArea2" maxlength="8"></td>
 </tr>
   <tr>
-    <td><input type="button" name="one" value=" 1 " OnClick="Calc.textArea1.value += '1'"></td>
+    <td><input type="button" name="one" value=" 1 " OnClick="Calc.Input.value += '1'"></td>
     <td><input type="button" name="two" value=" 2 " OnClick="Calc.Input.value += '2'"></td>
     <td><input type="button" name="three" value=" 3 " OnClick="Calc.Input.value += '3'"></td>
     <td><input type="button" name="plus"  value=" + " OnClick="Calc.Input.value += '+'"></td>
