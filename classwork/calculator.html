@@ -2,6 +2,17 @@
 <html>
 <head>
  
+ //Create your radio button
+<input type="radio" name="radiobtn" onclick="doSomething();">Radio button
+
+//this javascript function is called when user checks the radio button.
+function doSomething()
+{
+alert("Do something radio button was checked");
+}
+ 
+ 
+ 
  window.onload = function() {
 
     var myRadioButton = document.form1.getElementsByTagName("INPUT")[1];
