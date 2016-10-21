@@ -63,7 +63,7 @@ textArea1.onclick = function() {
   <tr>
     <td><input type="button" name="clear" value=" c " OnClick="Calc.Input.value = ''"></td>
     <td><input type="button" name="zero"  value=" 0 " OnClick="Calc.Input.value += '0'"></td>
-    <td><input type="button" name="DoIt"  value=" = " OnClick="Calc.textArea1.value = eval(Calc.Output.value)"></td>
+    <td><input type="button" name="DoIt"  value=" = " OnClick="Calc.Output.value = eval(Calc.textArea1.value)"></td>
     <td><input type="button" name="div"   value=" / " OnClick="Calc.Input.value += '/'"></td>
   </tr>
 </table>
