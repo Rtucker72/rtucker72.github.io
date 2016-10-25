@@ -29,11 +29,11 @@ alert("Do something radio button was checked");
  
  
 <script type="text/javascript">
- nput.onclick = function() {
+ radio1.onclick = function() {
     textArea1.focus();
 }
 textArea1.onclick = function() {
-    Input.checked = true;
+    radio1.checked = true;
 }
 </script>
 
@@ -45,10 +45,10 @@ textArea1.onclick = function() {
 
 <table align="center" border=3>
 <tr>
-<td colspan=4><input type="radio" name="input" value="textArea1"><input type="text" name="textArea1" maxlength="8"></td>
+<td colspan=4><input type="radio" name="input" value="radio1"><input type="text" name="textArea1" maxlength="8"></td>
 </tr>
 <tr>
-<td colspan=4><input type="radio" name="input" value="textArea2" onclick="textArea2"><input type="text" name="textArea2" maxlength="8"></td>
+<td colspan=4><input type="radio" name="input" value="radio2" onclick="textArea2"><input type="text" name="textArea2" maxlength="8"></td>
 </tr>
   <tr>
     <td><input type="button" name="one" value=" 1 " OnClick="Calc.textArea1.value += '1'"></td>
