@@ -6,9 +6,9 @@
 
 function check(id) { 
 var thistextbox = id.replace('box', 'area');
-var othertextarea = 'textarea1';
+var othertextarea = 'textArea1';
 if(id.slice(-1) == '1'){
-    othertextarea = 'textarea2';
+    othertextarea = 'textArea2';
 }
 var othertextbox = othertextarea.replace('area', 'box');
 document.getElementById(id).checked = true;
@@ -16,6 +16,19 @@ document.getElementById(thistextbox).disabled = false;
 document.getElementById(othertextarea).disabled = true;
 document.getElementById(othertextbox).checked = false;
 
+}
+    
+function firstNum(){
+    
+}
+    
+function secondNum(){
+    
+}
+
+function number1(textArea1){
+    if (textArea1 == true){
+               
 }
 
 </script>
@@ -28,10 +41,10 @@ document.getElementById(othertextbox).checked = false;
 
 <table align="center" border=3>
 <tr>
-<td colspan="4"><input type="radio" id="textbox1" onclick="check(this.id)" checked="true" /><input type="text" id="textarea1"></td>
+<td colspan="4"><input type="radio" id="textbox1" onclick="check(this.id)" checked="true" /><input type="text" id="textArea1"></td>
 </tr>
 <tr>
-<td colspan="4"><input type="radio" id="textbox2" onclick="check(this.id)"/><input type="text" id="textarea2" disabled="true"></td>
+<td colspan="4"><input type="radio" id="textbox2" onclick="check(this.id)"/><input type="text" id="textArea2" disabled="true"></td>
 </tr>
 
   <tr>
