@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+
+function check(id) { 
+var thistextbox = id.replace('box', 'area');
+var othertextarea = 'textarea1';
+if(id.slice(-1) == '1'){
+    othertextarea = 'textarea2';
+}
+var othertextbox = othertextarea.replace('area', 'box');
+document.getElementById(id).checked = true;
+document.getElementById(thistextbox).disabled = false;
+document.getElementById(othertextarea).disabled = true;
+document.getElementById(othertextbox).checked = false;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<form name="Calc">
+
+<table align="center" border=3>
+<tr>
+<td colspan="4"><input type="radio" id="textbox1" onclick="check(this.id)" checked="true" /><textarea id="textarea1"></textarea><</td>
+</tr>
+<tr>
+<td colspan="4"><input type="radio" id="textbox2" onclick="check(this.id)"/><textarea id="textarea2" disabled="true"></textarea></td>
+</tr>
+
+  <tr>
+    <td><input type="button" name="one" value=" 1 " OnClick="Calc.textArea1.value += '1'"></td>
+    <td><input type="button" name="two" value=" 2 " OnClick="Calc.textArea1.value += '2'"></td>
+    <td><input type="button" name="three" value=" 3 " OnClick="Calc.textArea1.value += '3'"></td>
+    <td><input type="button" name="plus"  value=" + " OnClick="Calc.textArea1.value += '+'"></td>
+  </tr>
+  <br>
+  <tr>
+    <td><input type="button" name="four" value=" 4 " OnClick="Calc.Input.value += '4'"></td>
+    <td><input type="button" name="five" value=" 5 " OnClick="Calc.Input.value += '5'"></td>
+    <td><input type="button" name="six" value=" 6 " OnClick="Calc.Input.value += '6'"></td>
+    <td><input type="button" name="minus" value=" - " OnClick="Calc.Input.value += '-'"></td>
+  </tr>
+  <br>
+  <tr>
+    <td><input type="button" name="seven" value=" 7 " OnClick="Calc.Input.value += '7'"></td>
+    <td><input type="button" name="eight" value=" 8 " OnClick="Calc.Input.value += '8'"></td>
+    <td><input type="button" name="nine" value=" 9 " OnClick="Calc.Input.value += '9'"></td>
+    <td><input type="button" name="times" value=" x " OnClick="Calc.Input.value += '*'"></td>
+  </tr>
+  <br>
+  <tr>
+    <td><input type="button" name="clear" value=" c " OnClick="Calc.Input.value = ''"></td>
+    <td><input type="button" name="zero"  value=" 0 " OnClick="Calc.Input.value += '0'"></td>
+    <td><input type="button" name="DoIt"  value=" = " OnClick="Calc.Output.value = eval(Calc.textArea1.value)"></td>
+    <td><input type="button" name="div"   value=" / " OnClick="Calc.Input.value += '/'"></td>
+  </tr>
+</table>
+<br>
+<p align="center">Answer
+<input type="text" name="Output" maxlength="8" value="">
+</p>
+ <p align="center">
+ <input type="reset">
+ </p>
+</form>
+
+</body>
+</html>
