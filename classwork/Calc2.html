@@ -6,9 +6,9 @@
 
 function check(id) { 
 var thistextbox = id.replace('box', 'area');
-var othertextarea = 'textArea1';
+var othertextarea = 'textarea1';
 if(id.slice(-1) == '1'){
-    othertextarea = 'textArea2';
+    othertextarea = 'textarea2';
 }
 var othertextbox = othertextarea.replace('area', 'box');
 document.getElementById(id).checked = true;
@@ -41,10 +41,10 @@ function number1(textArea1){
 
 <table align="center" border=3>
 <tr>
-<td colspan="4"><input type="radio" name="input" id="textbox1" onclick="check(this.id)" checked="true" /><input type="text" id="textArea1"></td>
+<td colspan="4"><input type="radio" name="input" id="textbox1" onclick="check(this.id)" checked="true" /><input type="text" id="textarea1"></td>
 </tr>
 <tr>
-<td colspan="4"><input type="radio" name="input" id="textbox2" onclick="check(this.id)"/><input type="text" id="textArea2" disabled="true"></td>
+<td colspan="4"><input type="radio" name="input" id="textbox2" onclick="check(this.id)"/><input type="text" id="textarea2" disabled="true"></td>
 </tr>
 
   <tr>
