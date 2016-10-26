@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bobs Calculator</title>
+<link href="style.css" rel="stylesheet" type="text/css"> 
+<script src="calculator.js"></script>
+</head>
+<body>
+
+<form name="calcForm">
+	<!-- Creates a div that isolates the form elements. -->
+		<div id="calcDiv">
+			<div id="argSelector">Argument Selector:</div>
+				<br>
+			
+			<div id="dataFields">
+				<input type="radio" name="radioButton" id="radioOne">
+				<input type="text" name="fieldOne" placeholder="Enter Data">
+					<br>
+				<input type="radio" name="radioButton" id="radioTwo">
+				<input type="text" name="fieldTwo" placeholder="Enter Data">
+			</div>		
+			
+				<table id="calculator">
+					<tr>
+						<td>
+							<input type="button" name="seven" value="7" onclick="applyValue(this)">
+						</td>
+						
+						<td>
+							<input type="button" name="eight" value="8" onclick="applyValue(this)">
+						</td>
+						
+						<td>
+							<input type="button" name="nine" value="9" onclick="applyValue(this)">
+						</td>
+						
+						<td>
+							<input type="button" name="divide" value="/" onclick="calculate(this)">
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							<input type="button" name="four" value="4" onclick="applyValue(this)">
+						</td>
+						
+						<td>
+							<input type="button" name="five" value="5" onclick="applyValue(this)">
+						</td>
+						
+						<td>
+							<input type="button" name="six" value="6" onclick="applyValue(this)">
+						</td>
+						
+						<td>
+							<input type="button" name="multiply" value="*" onclick="calculate(this)">
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							<input type="button" name="one" value="1" onclick="applyValue(this)">
+						</td>
+						
+						<td>
+							<input type="button" name="two" value="2" onclick="applyValue(this)">
+						</td>
+						
+						<td>
+							<input type="button" name="three" value="3" onclick="applyValue(this)">
+						</td>
+						
+						<td>
+							<input type="button" name="add" value="+" onclick="calculate(this)">
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							<input type="button" name="zero" value="0" onclick="applyValue(this)">
+						</td>
+						
+						<td>
+							<input type="button" name="decimal" value="." onclick="applyValue(this)">
+						</td>
+						
+						<td>
+							<input type="button" name="clear" value="C" onclick="clearForm()">
+						</td>
+						
+						<td>
+							<input type="button" name="subtract" value="-" onclick="calculate(this)">
+						</td>
+					</tr>
+				</table>
+				<br>
+			<div id="results">Results:
+				<input type="text" name="result" placeholder="0">
+			</div>	
+		</div>
+</form>
+
+
+
+
+</body>
+</html>
