@@ -99,7 +99,7 @@ document.getElementById('hatsCost').value = y;
 
 <tr>
 <td>Gloves</td>
-<td><select name="glovesSelect" onchange="validatingTheFields()" >
+<td><select name="glovesSelect">
   <option value="" disabled="disabled" selected="selected">Choose a Quantity</option>
   <option name="one" value="1">1</option>
   <option name="two" value="2">2</option>
@@ -128,8 +128,8 @@ document.getElementById('hatsCost').value = y;
 
 <tr>
 <td colspan="3">Shipping Method:
-<select name="shippingCost">
-  <option value="" disabled="disabled" selected="selected" onchange="validatingTheFields()">Choose a Shipping Method</option>
+<select name="shippingCost" onchange="validatingTheFields()">
+  <option value="" disabled="disabled" selected="selected" >Choose a Shipping Method</option>
   <option value="priority">Priority $5.00</option>
   <option value="overnight">Over Night $8.00</option>
   </select>
