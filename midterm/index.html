@@ -12,11 +12,6 @@ document.getElementById('glovesCost').value = x;
 
 }
 
-
-
-
-
-
 </script>
 
 </head>
@@ -131,7 +126,7 @@ document.getElementById('glovesCost').value = x;
 <tr>
 <td colspan="3">Shipping Method:
 <select name="shippingCost">
-  <option value="" disabled="disabled" selected="selected">Choose a Shipping Method</option>
+  <option value="" disabled="disabled" selected="selected" onChange="validatingTheFields()">Choose a Shipping Method</option>
   <option value="priority">Priority $5.00</option>
   <option value="overnight">Over Night $8.00</option>
   </select>
