@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+function receipt(total, name, address){
+this.total = total;
+this.name = document.shippingForm.name.value;
+this.address = document.shippingForm.address.value;
+
+ alert(total + name + address);
+}
+
+function shipping(shippingCost){
+if (shippingCost == priority){
+   shippingCost = 5;
+}else{
+shippingCost = 8;
+}
+
+function salesTax(gloveCost, hatCost){
+salesTax = (gloveCost + hatCost) * .0625;
+return salesTax;
+
+}
+
+function total(gloveCost, hatCost, salesTax, shippingCost){
+total = gloveCost + hatCost + salesTax + shippingCost;
+return total;
+}
+
+
+</script>
+
+</head>
+<body>
+
+<h1 align="center">Tucker Clothing</h1>
+
+<img src="clothes.jpg" alt="clothing" style="width:150px;height:100px;">
+<br>
+<br>
+
+<h3 align="center">Order Form</h3>
+
+<form name="shippingForm">
+<table>
+<tr>
+   <th>Shipping Address</th>
+ </tr>
+<tr>
+<td> Name: <input type="text" name="name" size="40"> </td>
+</tr>
+<tr>
+<td colspan="3"> Address: <input type="text" name="address" size="60"> </td>
+</tr>
+<tr>
+<td>City: <input type="text" name="address" size="20"> </td>
+<td>State:<select>
+  <option value="new york">NY</option>
+  <option value="Connecticut">CT</option>
+  <option value="new jersey">NJ</option>
+</select>
+</td>
+<td>Zip Code: <input type="text" name="address" size="10"> </td>
+</tr>
+
+<tr>
+<td>Telephone: <input type="text" name="telephone" size="20"> </td>
+<td colspan="2">Email: <input type="text" name="state" size="30"> </td>
+</tr>
+
+</table>
+
+<table>
+<tr>
+   <th>Billing Address</th>
+ </tr>
+<tr>
+<td> Name: <input type="text" name="name" size="40"> </td>
+</tr>
+<tr>
+<td colspan="3"> Address: <input type="text" name="address" size="60"> </td>
+</tr>
+<tr>
+<td>City: <input type="text" name="address" size="20"> </td>
+<td>State:<select>
+  <option value="new york">NY</option>
+  <option value="Connecticut">CT</option>
+  <option value="new jersey">NJ</option>
+</select>
+</td>
+<td>Zip Code: <input type="text" name="address" size="10"> </td>
+</tr>
+
+<tr>
+<td>Telephone: <input type="text" name="telephone" size="20"> </td>
+<td colspan="2">Email: <input type="text" name="state" size="30"> </td>
+</tr>
+
+</table>
+
+<h3>Products To Order</h3>
+<br>
+
+<table border="1" width="500">
+
+<tr>
+   <th>Item</th>
+   <th>Quantity</th>
+   <th>Price</th>
+   <th>Cost</th>
+</tr>
+
+<tr>
+<td>Gloves</td>
+<td><select>
+  <option value="" disabled="disabled" selected="selected">Choose a Quantity</option>
+  <option value="one">1</option>
+  <option value="two">2</option>
+  </select>
+</td>
+<td>$15</td>
+<td><input type="text" name="glovesprice" size="25"></td>
+</tr>
+
+<tr>
+<td>Hat</td>
+<td><select>
+  <option value="" disabled="disabled" selected="selected">Choose a Quantity</option>
+  <option value="one">1</option>
+  <option value="two">2</option>
+  </select>
+</td>
+<td>$35</td>
+<td><input type="text" name="hatCost" size="25"> </td>
+</tr>
+<tr>
+<td colspan="3" align="right">6.25% Sales Tax</td>
+<td><input type="text" name="sales tax" size="25"> </td>
+</tr>
+
+<tr>
+<td colspan="3">Shipping Method:
+<select name="shippingCost">
+  <option value="" disabled="disabled" selected="selected">Choose a Shipping Method</option>
+  <option value="priority">Priority $5.00</option>
+  <option value="overnight">Over Night $8.00</option>
+  </select>
+  </td>
+  <td><input type="text" name="shippingCost" size="25" value=""> </td>
+</tr>
+<tr>
+<td colspan="3" align="right">Total:</td>
+<td><input type="text" name="total" size="25"></td>
+</tr>
+
+</table>
+
+<br>
+<br>
+
+<input type="submit" value="Submit" onClick="receipt()">
+<button type="reset" value="Reset">Reset</button>
+
+</form>
+
+
+
+</body>
+</html>
