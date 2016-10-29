@@ -25,11 +25,11 @@ document.getElementById('tax').value = z;
 }
  
 function receipt(){
- var x = (document.orderForm.shipName.value);
+var t = document.orderForm.total.value;
+var name = document.orderForm.shipName.value;
+var address = document.orderForm.shipAddress.value;
 
- var y = (document.orderForm.shipState.value);
-
-alert (x + y);
+window.alert (t + " sold to " + name + " at " + address);
  
 }
 
@@ -55,11 +55,11 @@ alert (x + y);
 <td> Name: <input type="text" name="name" ID="shipName" size="40"> </td>
 </tr>
 <tr>
-<td colspan="3"> Address: <input type="text" name="address" size="60"> </td>
+<td colspan="3"> Address: <input type="text" name="shipAddress" ID="shipAddress" size="60"> </td>
 </tr>
 <tr>
-<td>City: <input type="text" name="address" size="20"> </td>
-<td>State:<select name="stateSelect" ID="stateSelect">
+<td>City: <input type="text" name="city" size="20"> </td>
+<td>State:<select name="shipState" ID="shipState">
   <option value="new york">NY</option>
   <option value="Connecticut">CT</option>
   <option value="new jersey">NJ</option>
