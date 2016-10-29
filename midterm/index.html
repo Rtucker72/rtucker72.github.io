@@ -23,6 +23,15 @@ document.getElementById('tax').value = z;
  document.getElementById('total').value = t;
  
 }
+ 
+function receipt(){
+ var x = (document.orderForm.shipName.value);
+
+ var y = (document.orderForm.shipState.value);
+
+Alert (x + y);
+ 
+}
 
 </script>
 
@@ -43,13 +52,13 @@ document.getElementById('tax').value = z;
    <th>Shipping Address</th>
  </tr>
 <tr>
-<td> Name: <input type="text" name="name" size="40"> </td>
+<td> Name: <input type="text" name="name" ID="shipName" size="40"> </td>
 </tr>
 <tr>
 <td colspan="3"> Address: <input type="text" name="address" size="60"> </td>
 </tr>
 <tr>
-<td>City: <input type="text" name="address" size="20"> </td>
+<td>City: <input type="text" name="address" name="shipState" size="20"> </td>
 <td>State:<select>
   <option value="new york">NY</option>
   <option value="Connecticut">CT</option>
