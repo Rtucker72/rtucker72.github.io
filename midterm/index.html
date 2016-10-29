@@ -7,10 +7,10 @@
 <script type="text/javascript">
 
 function validatingTheFields(){
-var x = 15 * parseInt(document.myForm.glovesSelect.value);
+var x = 15 * parseInt(document.orderForm.glovesSelect.value);
 document.getElementById('glovesCost').value = x;
 
-var y = 35 * parseInt(document.myForm.hatsSelect.value);
+var y = 35 * parseInt(document.orderForm.hatsSelect.value);
 document.getElementById('hatsCost').value = y;
    
 }
@@ -28,7 +28,7 @@ document.getElementById('hatsCost').value = y;
 
 <h3 align="center">Order Form</h3>
 
-<form name="myForm">
+<form name="orderForm">
 <table>
 <tr>
    <th>Shipping Address</th>
