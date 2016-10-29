@@ -9,7 +9,10 @@
 function validatingTheFields(){
 var x = 15 * parseInt(document.myForm.glovesSelect.value);
 document.getElementById('glovesCost').value = x;
-alert(x);
+
+var y = 35 * parseInt(document.myForm.hatsSelect.value);
+document.getElementById('hatsCost').value = y;
+   
 }
 
 </script>
@@ -109,14 +112,14 @@ alert(x);
 
 <tr>
 <td>Hat</td>
-<td><select>
+<td><select name= "hatsSelect" onchange="validatingTheFields()">
   <option value="" disabled="disabled" selected="selected">Choose a Quantity</option>
-  <option value="one">1</option>
-  <option value="two">2</option>
+  <option name="one" value="1">1</option>
+  <option name="two" value="2">2</option>
   </select>
 </td>
 <td>$35</td>
-<td><input type="text" name="hatCost" size="25"> </td>
+<td><input type="text" name="hatsCost" ID ="hatsCost" size="25" value=""></td>
 </tr>
 <tr>
 <td colspan="3" align="right">6.25% Sales Tax</td>
