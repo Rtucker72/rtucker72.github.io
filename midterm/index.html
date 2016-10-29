@@ -6,31 +6,15 @@
 
 <script type="text/javascript">
 
-function receipt(total, name, address){
-this.total = total;
-this.name = document.shippingForm.name.value;
-this.address = document.shippingForm.address.value;
-
- alert(total + name + address);
-}
-
-function shipping(shippingCost){
-if (shippingCost == priority){
-   shippingCost = 5;
-}else{
-shippingCost = 8;
-}
-
-function salesTax(gloveCost, hatCost){
-salesTax = (gloveCost + hatCost) * .0625;
-return salesTax;
+function validatingTheFields(){
+var x = 15 * parseInt(document.myForm.glovesSelect.value;
+document.getElementById('glovesCost').value = x;
 
 }
 
-function total(gloveCost, hatCost, salesTax, shippingCost){
-total = gloveCost + hatCost + salesTax + shippingCost;
-return total;
-}
+
+
+
 
 
 </script>
@@ -46,7 +30,7 @@ return total;
 
 <h3 align="center">Order Form</h3>
 
-<form name="shippingForm">
+<form name="myForm">
 <table>
 <tr>
    <th>Shipping Address</th>
@@ -117,14 +101,15 @@ return total;
 
 <tr>
 <td>Gloves</td>
-<td><select>
+<td><select name="glovesSelect">
   <option value="" disabled="disabled" selected="selected">Choose a Quantity</option>
   <option value="one">1</option>
   <option value="two">2</option>
   </select>
 </td>
-<td>$15</td>
-<td><input type="text" name="glovesprice" size="25"></td>
+
+<td><input type="number" name="glovesPrice" ID ="glovesPrice" size="25"></td>
+<td><input type="number" name="glovesCost" ID ="glovesCost" size="25"></td>
 </tr>
 
 <tr>
