@@ -6,7 +6,7 @@
 
 <script type="text/javascript">
 
-function validatingTheFields(){
+function allFields(){
 var x = 15 * parseInt(document.orderForm.glovesSelect.value);
 document.getElementById('glovesCost').value = x;
 
@@ -146,7 +146,7 @@ window.alert(t + " sold to " + name + " at " + address);
 
 <tr>
 <td colspan="3">Shipping Method:
-<select name="shippingSelect" onchange="validatingTheFields()">
+<select name="shippingSelect" onchange="allFields()">
   <option value="" disabled="disabled" selected="selected" >Choose a Shipping Method</option>
   <option name="priority" value="5">Priority $5.00</option>
   <option name="overnight" value="8">Over Night $8.00</option>
