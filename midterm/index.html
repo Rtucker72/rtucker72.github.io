@@ -12,7 +12,9 @@ document.getElementById('glovesCost').value = x;
 
 var y = 35 * parseInt(document.orderForm.hatsSelect.value);
 document.getElementById('hatsCost').value = y;
-   
+ 
+var z = 0.0625 * (x + y);
+document.getElementById('tax').value = z;
 }
 
 </script>
@@ -123,7 +125,7 @@ document.getElementById('hatsCost').value = y;
 </tr>
 <tr>
 <td colspan="3" align="right">6.25% Sales Tax</td>
-<td><input type="text" name="sales tax" size="25"> </td>
+<td><input type="text" name="tax" ID="tax" size="25" value="0"> </td>
 </tr>
 
 <tr>
