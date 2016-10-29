@@ -15,6 +15,13 @@ document.getElementById('hatsCost').value = y;
  
 var z = 0.0625 * (x + y);
 document.getElementById('tax').value = z;
+ 
+ var yy = parseInt(document.orderForm.shippingSelect.value);
+ ducument.getElementById('shippingCost').value = yy;
+ 
+ var t = x + y + z + yy;
+ document.getElementById('total').value = t;
+ 
 }
 
 </script>
@@ -130,13 +137,13 @@ document.getElementById('tax').value = z;
 
 <tr>
 <td colspan="3">Shipping Method:
-<select name="shippingCost" onchange="validatingTheFields()">
+<select name="shippingSelect" onchange="validatingTheFields()">
   <option value="" disabled="disabled" selected="selected" >Choose a Shipping Method</option>
   <option value="priority">Priority $5.00</option>
   <option value="overnight">Over Night $8.00</option>
   </select>
   </td>
-  <td><input type="text" name="shippingCost" size="25" value=""> </td>
+  <td><input type="text" name="shippingCost" size="25" value="0"> </td>
 </tr>
 <tr>
 <td colspan="3" align="right">Total:</td>
