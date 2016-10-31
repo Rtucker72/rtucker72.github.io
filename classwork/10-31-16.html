@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+    function callFibo() {
+
+        var num = document.getElementById('txtFibo').value;
+
+        if (isNaN(num)  ((num < 1)  (num > 35))) {
+            alert("Only numbers allowed. Enter a number > 0 and < 35");
+        }
+        else {
+            alert("Number " + num + " in the Fibonacci series is " +
+                calcFiboNth(num));
+        }
+    }
+
+    function calcFiboNth(num) {
+        if (num > 2) {
+            return calcFiboNth(num - 2) + calcFiboNth(num - 1);
+        } else {
+            return 1;
+        }
+    }
+</script>
+
+
+</head>
+<body>
+
+<input id="txtFibo" type="text" />
+<br /><br />
+<input id="btnFibo" type="button" value="Enter a Number and click"
+onClick="callFibo()" />
+
+</body>
+</html>
