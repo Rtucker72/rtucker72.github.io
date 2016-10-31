@@ -10,10 +10,10 @@
         var num = document.getElementById('txtFibo').value;
 
         if (isNaN(num)  ((num < 1)  (num > 35))) {
-            alert("Only numbers allowed. Enter a number > 0 and < 35");
+            window.alert("Only numbers allowed. Enter a number > 0 and < 35");
         }
         else {
-            alert("Number " + num + " in the Fibonacci series is " +
+            window.alert("Number " + num + " in the Fibonacci series is " +
                 calcFiboNth(num));
         }
     }
