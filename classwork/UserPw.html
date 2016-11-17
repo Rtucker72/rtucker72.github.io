@@ -1,0 +1,32 @@
+<html>
+<body>
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+        Name: <input type="text" name="username" required>
+            <br>
+        Password: <input type="password" name="key" required>
+            <br>
+        <input type="submit" value="Login">
+        </form>
+ 
+        <?php
+        //Creates an associative array. Left is USERNAMES, right is PASSWORDS.
+        $storedInformation = array("Michael" => "HelloWorld", "Andrew" => "LogMeIn", "John" => "GoodbyeWorld");
+ 
+        //Makes sure form Request Method is POST.
+        if ($_SERVER['REQUEST_METHOD'] == "POST") {
+            //Grabs username from form.
+            $enteredUsername = $_POST['username'];
+            //Grabs password from form.
+            $enteredPassword = $_POST['key'];
+            //Checks if the $enteredPassword is associated with the $enteredUsername in array $storedInformation.
+            if ($storedInformation[$enteredUsername] != $enteredPassword) {
+                //If the password is not associated with the username, the user receives an error message.
+                echo "Login failed. Check username and password.";
+            } else {
+                //If the password is associated with the username, the user is "logged in".
+                echo "Successfully logged in.";
+            }
+        }
+        ?>
+    </body>
+</html>
