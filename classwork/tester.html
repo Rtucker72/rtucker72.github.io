@@ -1,0 +1,85 @@
+<?php
+// define variables and set to empty values
+$nameErr = $emailErr = $commentErr = "";
+$name = $email = $comment = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+      $nameErr = "Only letters and white space allowed";
+    }
+  }
+  
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["email"]);
+    // check if e-mail address is well-formed
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Invalid email format";
+    }
+  }
+
+  
+  if (empty($_POST["comment"])) {
+    $commentErr = "Comment is required";
+  } else {
+    $comment = test_input($_POST["comment"]);
+  }
+
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+.error {color: #FF0000;}
+</style>
+ <meta charset="UTF-8">
+<title>Contact Me</title>
+<style type="text/css" media="all">@import "style.css";</style>
+</head>
+<body>
+ <header class="banner">
+  <h1>Robert Tucker</h1>
+  <p>Personal Webpage</p>
+</header>
+ 
+ <nav>
+ <ul> 
+   <li> <a href="index.html">Home</a></li>
+   <li> <a href="about-me.html">About Me</a></li>
+   <li> <a href="education.html">Education</a></li>
+   <li> <a href="hobbies.html">Hobbies</a></li>
+   <li> <a href="photos.html">Photos</a></li>
+   <li> <a href="contact.html">Contact Me</a></li>
+  </ul></nav>
+ <br><br><br>
+
+
+<p><span class="error">* required field.</span></p>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>  
+  Name: <input type="text" name="name" value="<?php echo $name;?>">
+  <span class="error">* <?php echo $nameErr;?></span>
+  <br><br>
+  E-mail: <input type="text" name="email" value="<?php echo $email;?>"
+  <span class="error">* <?php echo $emailErr;?></span>
+  <br><br>
+  Comments: <textarea name="comment" rows="5" cols="40" value="<?php echo $comment;?>"></textarea>
+  <span class="error">* <?php echo $commentErr;?></span>
+  <br><br>
+  <input type="submit" name="submit" value="Submit">
+  <input type="reset" name="reset" value="Reset" />
+</form>
